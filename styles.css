@@ -129,6 +129,9 @@
     background-color: #3CC36D;
     box-shadow: 0 6px #36AA60;
 }
+.form__submit:active {
+    background-color: #36AA60;
+}
 .form__submit-text {
     font: 500 20px/24px 'Open Sans', sans-serif;
     color: #fff;
