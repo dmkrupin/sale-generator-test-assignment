@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Generator тестовое Крупин</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page__body">
+    <button class="button">Кликни</button>
+    <div class="popup-bg hidden">
+        <section class="popup">
+            <button class="popup__close">Закрыть окно</button>
+            <h3 class="popup__title">
+                Получите набор файлов<br>
+                для руководителя:
+            </h3>                           
+            <form class="popup__form form" id="amoforms_form" action="https://forms.amocrm.ru/queue/add" method="POST" enctype="multipart/form-data">
+                <label class="form__label" for="">Введите Email для получения файлов:</label>
+                <input class="form__input form__input--email" type="email" name="fields[771789_1][410009]" placeholder="E-mail">
+                <label class="form__label" for="">Введите телефон для подтверждения доступа:</label>
+                <input class="form__input form__input--tel" type="tel" name="fields[771787_1][409997]" placeholder="+7 (000) 000-00-00">
+                <button class="form__submit" type="submit" id="button_submit">
+                    <span class="form__submit-text">Скачать файлы</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="31" viewBox="0 0 28 31">
+                        <image id="icon-click" data-name="icon-click" width="28" height="31" xlink:href="data:image/png;base64,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"/>
+                      </svg>                      
+                </button>
+                <input type="hidden" name="form_id" id="form_id" value="905368">
+                <input type="hidden" name="hash" value="3d90e8ba440baa531a3557d7acdcea1a">
+            </form>
+        </section>
+    </div>
+<script src="scripts.js" type="module"></script>
+
+</body>
+</html>
