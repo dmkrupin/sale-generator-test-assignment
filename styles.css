@@ -49,6 +49,8 @@
     transform: translate(-50%, -50%);
     width: 320px;
     min-height: 540px;
+    padding-left: 19px;
+    padding-right: 19px;
 
     background-color: #fff;
     background-image: 
@@ -87,8 +89,6 @@
 .popup__form {
     width: 100%;
     box-sizing: border-box;
-    padding-left: 19px;
-    padding-right: 19px;
 }
 .form {
     display: flex;
@@ -126,13 +126,85 @@
 
     border: none;
     border-radius: 5px;
-    background-color: #36AA60;
+    background-color: #3CC36D;
+    box-shadow: 0 6px #36AA60;
 }
 .form__submit-text {
     font: 500 20px/24px 'Open Sans', sans-serif;
     color: #fff;
 }
+.form__note {
+    display: none;
+}
+.form__files-info {
+    color: #808080;
+    text-transform: uppercase;
+    font: 400 11.6px/14px 'Open Sans', sans-serif;
+}
 
 .hidden {
     display: none;
+}
+
+
+@media (min-width: 1200px) {
+    .popup {
+        width: 909px;
+        min-height: 555px;
+        padding-left: 50px;
+        padding-right: 52px;
+        padding-top: 44.5px;
+        padding-bottom: 68.5px;
+        box-sizing: border-box;
+
+        background-position: 53px 191px, 30px 100%;
+        background-size: 326px 44px, 424px 302px;    
+
+        align-items: stretch;
+    }
+    .popup__close {
+        top: 21px;
+        right: 18px;
+    }  
+    .popup__title {
+        margin-top: 0;
+        margin-bottom: 48px;
+    
+        text-align: left;
+        font: 700 35px/42px 'Open Sans', sans-serif;
+    }
+    .popup__form {
+        width: 352px;
+        box-sizing: border-box;
+        align-self: flex-end;
+    }    
+    .form__label {
+        margin-bottom: 9px;
+    
+        font: 400 15.2px/18.2px 'Open Sans', sans-serif;
+    }
+    .form__input {
+        margin-bottom: 26px;
+        padding: 12px 20px 12px;    
+        height: 52px;
+    
+        font: 400 19.8px/23.8px 'Open Sans', sans-serif;
+    }
+    .form__input::placeholder {
+        font: 400 19.8px/23.8px 'Open Sans', sans-serif;
+    }
+    .form__submit {
+        height: 71px;
+        margin-top: -10px;
+
+        padding: 16px 61px;
+    }
+    .form__submit-text {
+        font: 500 24.6px/29.5px 'Open Sans', sans-serif;
+    }    
+    .form__note {
+        margin-top: 9px;
+        display: flex;
+        justify-content: space-around;
+    }
 }

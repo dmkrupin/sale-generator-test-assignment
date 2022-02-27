@@ -17,10 +17,10 @@
                 для руководителя:
             </h3>                           
             <form class="popup__form form" id="amoforms_form" action="https://forms.amocrm.ru/queue/add" method="POST" enctype="multipart/form-data">
-                <label class="form__label" for="">Введите Email для получения файлов:</label>
-                <input class="form__input form__input--email" type="email" name="fields[771789_1][410009]" placeholder="E-mail">
-                <label class="form__label" for="">Введите телефон для подтверждения доступа:</label>
-                <input class="form__input form__input--tel" type="tel" name="fields[771787_1][409997]" placeholder="+7 (000) 000-00-00">
+                <label class="form__label" for="email">Введите Email для получения файлов:</label>
+                <input class="form__input form__input--email" type="email" name="fields[771789_1][410009]" id="email" placeholder="E-mail" autocomplete="off">
+                <label class="form__label" for="tel">Введите телефон для подтверждения доступа:</label>
+                <input class="form__input form__input--tel" type="tel" name="fields[771787_1][409997]" id="tel" placeholder="+7 (000) 000-00-00" autocomplete="off" required>
                 <button class="form__submit" type="submit" id="button_submit">
                     <span class="form__submit-text">Скачать файлы</span>
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="31" viewBox="0 0 28 31">
@@ -29,6 +29,11 @@
                 </button>
                 <input type="hidden" name="form_id" id="form_id" value="905368">
                 <input type="hidden" name="hash" value="3d90e8ba440baa531a3557d7acdcea1a">
+                <div class="form__note">
+                    <span class="form__files-info">PDF 4,7 MB</span>
+                    <span class="form__files-info">DOC 0,8 MB</span>
+                    <span class="form__files-info">XLS 1,2 MB</span>
+                </div>
             </form>
         </section>
     </div>
